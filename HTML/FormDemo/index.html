@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Demo</title>
+</head>
+<body>
+
+<form action="" method="get">
+
+<!--    if we want a first name-->
+<!--    <label for="fname"></label>-->
+<!--    <input type="text" name="fname" id="fname">-->
+    <label>
+        First name:
+        <input
+                type="text"
+                name="doggy"
+                placeholder="Please enter First Name"
+                id="horse"
+                required
+        >
+    </label>
+    <br>
+    <label>
+        Last Name:
+        <input
+                type="text"
+                name="horse"
+                placeholder="Please enter Last Name"
+                id="lname"
+<!--                minlength="4"-->
+<!--                maxlength="20"-->
+        >
+    </label>
+    <br>
+    <label for="">Age:
+        <input
+                type="number"
+                name="age"
+                id=""
+<!--                min="21"-->
+<!--                max="100"-->
+<!--        >-->
+    </label>
+    <br>
+    <label>
+        Phone:
+        <input
+                type="tel"
+                name="phone"
+                placeholder="Please enter Phone Number"
+                id="phone"
+<!--                required-->
+
+        >
+    </label>
+
+
+    <br>
+    <label for=""> Email
+        <input type="email" name="" id="">
+    </label>
+    <br>
+    <label for=""> Are you Married?
+        <input type="radio" name="isMarried" id="" value="yes">Yes
+        <input type="radio" name="isMarried" id="" value="no" checked>No
+        <input type="radio" name="isMarried" id="">Complicated
+    </label>
+    <br>
+    <label for=""> Are you Alive
+        <input type="radio" name="alive" id="">Yes
+        <input type="radio" name="alive" id="">No
+        <input type="radio" name="alive" id="">Complicated
+    </label>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+
+
+
+</body>
+</html>
