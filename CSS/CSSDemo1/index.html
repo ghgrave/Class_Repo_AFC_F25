@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Demo 1</title>
+
+
+<!--    Font Awesome-->
+<!--    google fonts-->
+    <!--ALL personal CSS needs to be last!!! - for now-->
+
+    <style>
+        selector {
+            /*properties = name: value*/
+        }
+        .dog.cat {
+            background-color: orange;
+        }
+        .dog .cat {
+            background-color: yellow
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<p id="constantin">Hello World</p>
+<p>Good Bye</p>
+<p>
+    <img src="" alt="" id="constantine">
+</p>
+<ul style="background-color: darkblue">
+    <li class="dog"><span class="cat">Dog </span></li>
+    <li style="background-color: red" class="cat">Cat </li>
+    <li class="dog cat ">CatDog</li>
+</ul>
+
+<div class="dog">
+    <ul>
+        <li>Nothing</li>
+        <li >
+            <p class="cat">Kitty</p>
+        </li>
+    </ul>
+</div>
+
+<!--ALL personal js needs to be last!!! - for now-->
+<script src="script.js"></script>
+</body>
+
+</html>

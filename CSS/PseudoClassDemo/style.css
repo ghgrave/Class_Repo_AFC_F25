@@ -1,0 +1,52 @@
+
+
+h1:hover {
+    background-color: purple;
+}
+
+button:hover {
+    color: red;
+}
+
+/*"above the input"*/
+input:hover {
+    border: 10px solid blue;
+    cursor: pointer;
+}
+
+/*clicked inside of input*/
+input:focus {
+    background-color: yellow;
+}
+
+button:active {
+    font-size: 36px;
+}
+
+h1:active {
+    color: green;
+}
+
+/*attribute selectors*/
+a[target='_blank']:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

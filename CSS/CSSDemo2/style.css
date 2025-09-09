@@ -1,0 +1,50 @@
+
+ /*Star selector (regex)
+ "reset built-in browser styling*/
+ * {
+     margin: 0;
+     padding: 0;
+     border: none;
+     box-sizing: border-box;
+ }
+
+body {
+     background-color: #00000011;
+ }
+
+ /*many property short cuts*/
+ /*background*/
+ /*What we really are saying is:*/
+ /*background: red url("img_tree.gif") no-repeat fixed center;*/
+
+ /*select p tag*/
+
+ /*10px padding all sides*/
+ /* p {*/
+ /*     background-color: white; !*blue for background color*!*/
+ /*     !*padding-top: 10px;*!*/
+ /*     !*padding-right: 10px;*!*/
+ /*     !*padding-bottom: 10px;*!*/
+ /*     !*padding-left: 10px;*!*/
+ /*     !*padding: 10px;*!*/
+ /*     !*padding: 10px 20px;*!*/
+ /*     !*padding: 10px 20px 30px;*!*/
+ /*     !*border-style: solid;*!*/
+ /*     !*border-width: 10px;*!*/
+ /*     !*border-color: black;*!*/
+ /*     border: ridge blue 20px;*/
+ /*     !*margin: 100px 30px;*!*/
+ /* }*/
+
+ p {
+     border: blue ridge 10px;
+     width: 50%;
+     margin: 50px auto;
+     font-family: "Henny Penny", system-ui;
+     text-shadow:1px 2px 3px red;
+ }
+
+ p.doggy:hover {
+     background-color: yellowgreen;
+     box-shadow:1px 2px 3px red;
+ }
