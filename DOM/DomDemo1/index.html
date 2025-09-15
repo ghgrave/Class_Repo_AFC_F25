@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dom Demo 1</title>
+</head>
+<body>
+<!--<h1>Avengers</h1>-->
+<!--<h1>X-Men</h1>-->
+<!--<ul>-->
+<!--    <li id="teamLeader">Wolverine</li>-->
+<!--    <li class="mutant">Cyclops</li>-->
+<!--    <li class="mutant">ShadowCat</li>-->
+<!--</ul>-->
+
+<!--<a href="https://www.costco.com/">Costco</a>-->
+<!--<br>-->
+
+<!--<label for="pw">Password: </label>-->
+<!--<input type="password" name="pass_word" id="pw">-->
+
+<h1>X-Men Roster Application</h1>
+<form action="/cerebro">
+    <label for="first_name">First Name: </label>
+    <input type="text" name="fname" id="first_name" />
+    <br /><br />
+    <button type="submit">Join Team</button>
+</form>
+
+<script>
+    const rosterHeader = document.querySelector("h1");
+    // add event listener
+    // listening for a click event on the h1 element
+    rosterHeader.addEventListener("click", (event)=>{
+        console.log("You clicked the h1.");
+        // set new content
+        rosterHeader.textContent = "Avengers Assemble!";
+    })
+
+    const form = document.getElementsByTagName("form");
+    form[0].addEventListener("submit", (event) => {
+        event.preventDefault();
+        let firstName = document.getElementById("first_name")
+        console.log("Submitted");
+        console.log("Value from first name input: ", firstName.value);
+    });
+
+    // let input = document.getElementById("pw");
+    // // get type value => password
+    // let inputType = input.type;
+    // console.log(inputType);
+    // // converts type value => number
+    // input.type = "number";
+
+    // let xmenTeamLeader = document.getElementById("teamLeader")
+    // console.log(xmenTeamLeader)
+    // let mutants = document.getElementsByClassName("mutant")
+    // console.log(mutants[1])
+    // let allXmen = document.getElementsByTagName("li")
+    // console.log(allXmen)
+    // let selectedXmen = document.querySelector(".mutant")
+    // console.log(selectedXmen)
+    //
+    // // currently 2 choices
+    // let allTeams = document.querySelectorAll("h1")
+    // // console.log(allTeams)
+    // allTeams[0].style.color = "red"
+    // allTeams[0].style.border = "green solid 5px"
+    // allTeams[0].style.fontSize = "48px"
+    // let teamContent = allTeams[0].textContent
+    // console.log(teamContent)
+    // allTeams[1].textContent =  "New Mutants"
+
+
+
+
+</script>
+</body>
+</html>
