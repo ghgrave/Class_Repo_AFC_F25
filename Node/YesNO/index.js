@@ -2,7 +2,7 @@
 // Create an array of 5 random "yes words"
 // Combine into ONE array using spread operator
 
-const yesNoWords = require('yes-no-words')
+const yesNoWords = require('yes-no-words').default
 
 // Create an array of 5 random "yes words"
 let yesArray = [];
@@ -14,3 +14,4 @@ for (let i = 0; i < 5;i++){
 }
 
 let newArray = [...yesArray, ...noArray]
+console.log(newArray)
