@@ -1,0 +1,8 @@
+{
+  "include": ["./src/**/*.ts"],
+  "compilerOptions": {
+    "outDir": "./build",
+    "target": "ES2022",
+    "module" : "CommonJS"
+  }
+}
