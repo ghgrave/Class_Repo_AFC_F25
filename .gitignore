@@ -25,6 +25,6 @@ replay_pid*
 
 node_modules
 .idea
-.DS_Sls -altore
+.DS_Store
 
 
