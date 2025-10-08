@@ -18,11 +18,18 @@ const App = ()=>{
 
     const handleSubmit = (event) =>{
         event.preventDefault();
+        // takes current list of todos and spreads them out at beginning of array,
+        // and then appends the newTodo at the end.
         setTodos(
             [...todos, newTodo]
         )
+        // resets value back to an empty string
+        // allows user to start typing new todo
         setNewTodo("")
     }
+
+
+
     return(
         <>
             <h1>Simple ToDo</h1>
@@ -45,11 +52,15 @@ const App = ()=>{
             <ul>
 
             {/*    we need to display all our todos as li's*/}
-                {todos.map((el, index) =>{
-                    return (
-                        <li key={index}>{el}</li>
-                    )
-                })}
+            {/*    you could also make this a function that runs up at top of APP
+            component ( or even in another file and then import)
+            and then reference just the variable*/}
+                {/*{todos.map((el, index) =>{*/}
+                {/*    return (*/}
+                {/*        <li key={index}>{el}</li>*/}
+                {/*    )*/}
+                {/*})}*/}
+                {todoList}
 
             </ul>
         </>
