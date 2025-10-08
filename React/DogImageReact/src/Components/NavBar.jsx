@@ -14,14 +14,14 @@ import {
     NavbarText,
 } from 'reactstrap';
 
-function NavBar(args) {
+function NavBar(props) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
 
     return (
         <div>
-            <Navbar {...args}>
+            <Navbar {...props}>
                 <NavbarBrand href="/">Splash Page</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
