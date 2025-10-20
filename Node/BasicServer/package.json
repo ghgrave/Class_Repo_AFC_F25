@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "BasicServer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "morgan": "^1.10.1",
+    "prettier": "^3.6.2"
+  }
+}
