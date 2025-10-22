@@ -37,14 +37,14 @@ CREATE
 DELETE
 1) endpoint - DELETE verb and /api/bucket/:id
 2) send back JSON
-3) send back the all items minus the one removed
+3) send back success = status code
 4) send back one object - what was deleted.
 
 UPDATE
 1) endpoint - PUT verb and /api/bucket/:id
 1a) updating the CSS
 2) send back JSON
-3) send back ONE object that will have isComplete updated
-4) ???????
+3) send back success = status code
+4) send back one object - what was updated
 
 
