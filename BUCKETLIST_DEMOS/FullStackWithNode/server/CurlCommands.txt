@@ -1,0 +1,19 @@
+# curl http://localhost:3000/api/bucket
+GET http://localhost:3000/api/bucket
+
+# curl -X POST http://localhost:3000/api/bucket
+#     -H "Content-Type: application/json"
+#     -d '{"description": "Buy groceries"}'
+POST http://localhost:3000/api/bucket
+Content-Type: application/json
+
+{
+  "description": "Buy groceries"
+}
+
+# curl -X DELETE http://localhost:3000/api/bucket/3
+DELETE http://localhost:3000/api/bucket/3
+
+
+# curl -X PUT http://localhost:3000/api/bucket/5
+PUT http://localhost:3000/api/bucket/1

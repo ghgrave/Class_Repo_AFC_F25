@@ -2,8 +2,13 @@ const {bucketArray} = require("./fakeData")
 const express = require('express')
 // create an instance of server and all the "fun functionality" associated with express
 const app = express()
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
+const cors = require("cors")
 
+
+// allows all sites to access our API, e.g. localhost:3000
+// can access this API
+app.use(cors())
 // add body parser - unsure? use both!
 // if sent as json
 app.use(express.json())
@@ -70,7 +75,7 @@ app.put("/api/bucket/:id", (req, res)=>{
     if(!requestedId){
         res.status(404).json({message: "No id supplied."})
     }
-    let item = bucketlist.find(
+    let item = bucketArray.find(
         (el)=>{
             return requestedId === el.id
         }
